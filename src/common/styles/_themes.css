@@ -1,0 +1,103 @@
+:root {
+  --color-bg: #faf6ef;
+  --color-bg-elevated: #ffffff;
+  --color-bg-hover: #f1e9d8;
+  --color-bg-overlay: rgba(0, 0, 0, 0.04);
+
+  --color-text: #1a1310;
+  --color-text-muted: #7a6a5a;
+  --color-text-faint: #b3a08a;
+
+  --color-border: #e8dcc4;
+  --color-border-strong: #cfbf9f;
+
+  --color-accent: #b8842f;
+  --color-accent-hover: #a87325;
+  --color-accent-soft: rgba(184, 132, 47, 0.12);
+  --color-accent-text: #ffffff;
+
+  --color-burgundy: #8b1d28;
+  --color-burgundy-soft: rgba(139, 29, 40, 0.08);
+
+  --color-success: #2f8a4f;
+  --color-danger: #c1322f;
+
+  --gradient-hero: radial-gradient(
+      ellipse at top,
+      rgba(184, 132, 47, 0.15) 0%,
+      transparent 60%
+    ),
+    radial-gradient(ellipse at bottom right, rgba(139, 29, 40, 0.08) 0%, transparent 60%);
+  --gradient-card-hover: linear-gradient(
+    135deg,
+    rgba(184, 132, 47, 0.08) 0%,
+    transparent 50%
+  );
+
+  --shadow-sm: 0 1px 2px rgba(40, 25, 15, 0.05);
+  --shadow-md: 0 8px 24px rgba(40, 25, 15, 0.08);
+  --shadow-lg: 0 20px 60px rgba(40, 25, 15, 0.12);
+  --shadow-glow: 0 0 40px rgba(184, 132, 47, 0.25);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+
+  --container-max: 1240px;
+
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+[data-theme='dark'] {
+  --color-bg: #0d0a08;
+  --color-bg-elevated: #16110d;
+  --color-bg-hover: #1f1812;
+  --color-bg-overlay: rgba(255, 255, 255, 0.03);
+
+  --color-text: #f5e6c8;
+  --color-text-muted: #8a7860;
+  --color-text-faint: #5a4a3a;
+
+  --color-border: #2a201a;
+  --color-border-strong: #3d2f24;
+
+  --color-accent: #d4a455;
+  --color-accent-hover: #e6b96a;
+  --color-accent-soft: rgba(212, 164, 85, 0.14);
+  --color-accent-text: #16110d;
+
+  --color-burgundy: #b53442;
+  --color-burgundy-soft: rgba(181, 52, 66, 0.12);
+
+  --color-success: #4ade80;
+  --color-danger: #ef6b6b;
+
+  --gradient-hero: radial-gradient(
+      ellipse at top,
+      rgba(212, 164, 85, 0.18) 0%,
+      transparent 60%
+    ),
+    radial-gradient(ellipse at bottom right, rgba(181, 52, 66, 0.12) 0%, transparent 60%);
+  --gradient-card-hover: linear-gradient(
+    135deg,
+    rgba(212, 164, 85, 0.1) 0%,
+    transparent 50%
+  );
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(212, 164, 85, 0.35);
+}
