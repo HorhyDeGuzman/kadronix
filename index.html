@@ -5,6 +5,26 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kadronix</title>
+
+    <!-- Pre-paint theme bootstrap: avoids light-theme flash on dark-theme load -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('kadronix:theme')
+          if (stored !== 'light' && stored !== 'dark') {
+            stored = window.matchMedia('(prefers-color-scheme: dark)').matches
+              ? 'dark'
+              : 'light'
+          }
+          document.documentElement.dataset.theme = stored
+          document.documentElement.style.colorScheme = stored
+        } catch (e) {}
+      })()
+    </script>
+    <style>
+      html { background-color: #faf6ef; color-scheme: light; }
+      html[data-theme='dark'] { background-color: #0d0a08; color-scheme: dark; }
+    </style>
   </head>
   <body>
     <div id="app"></div>
